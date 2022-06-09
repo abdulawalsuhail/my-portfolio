@@ -19,7 +19,8 @@ const Service = () => {
                             ● Users also can add a product to the cart or remove
                             it from thecart. </p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-accent"><a href='https://accounted-web-layout.firebaseapp.com/' target="_blank" rel="noreferrer">Live Demo</a></button>
+                            <button class="btn btn-primary"><a href='https://accounted-web-layout.firebaseapp.com/' target="_blank" rel="noreferrer">Live</a></button>
+                            <button class="btn btn-neutral"><a href='https://github.com/abdulawalsuhail/service-provider-assign-auth' target="_blank" rel="noreferrer">Git Hub</a></button>
                         </div>
                     </div>
                 </div>
@@ -35,7 +36,9 @@ const Service = () => {
                             ● No spammer will be able to use the full features of
                             thewebsite. </p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-accent"><a href='https://roaring-kangaroo-7c0712.netlify.app/' target="_blank" rel="noreferrer" >Live demo</a></button>
+                            <button class="btn btn-neutral"><a href='https://github.com/abdulawalsuhail/warehouse-client-assign' target="_blank" rel="noreferrer" >Git Hub(C)</a></button>
+                            <button class="btn btn-neutral"><a href='https://github.com/eliyas700/gadget-world-server' target="_blank" rel="noreferrer" >Git Hub(S)</a></button>
+                            <button class="btn btn-primary"><a href='https://roaring-kangaroo-7c0712.netlify.app/' target="_blank" rel="noreferrer" >Live</a></button>
                         </div>
                     </div>
                 </div>
@@ -44,7 +47,7 @@ const Service = () => {
                         <img src={AAS} alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">AASElectronics is my third website!</h2>
+                        <h2 class="card-title">AAS Electronics is my third website!</h2>
                         <p>● This site is Mainly an Electronics site.<br/>
                             ● You will get 3 types of view for (local user, logged in
                             users, adminpanel) <br/>
@@ -52,7 +55,9 @@ const Service = () => {
                             card, Admin can manage site other
                             functionalities. </p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-accent"><a href='https://aas-electronics.web.app/' target="_blank" rel="noreferrer">Live demo</a></button>
+                            <button class="btn btn-neutral"><a href='https://github.com/abdulawalsuhail/manufactural-assign' target="_blank" rel="noreferrer">Git Hub(C)</a></button>
+                            <button class="btn btn-neutral"><a href='https://github.com/abdulawalsuhail/manufact-server-assign' target="_blank" rel="noreferrer">Git Hub(s)</a></button>
+                            <button class="btn btn-primary"><a href='https://aas-electronics.web.app/' target="_blank" rel="noreferrer">Live</a></button>
                         </div>
                     </div>
                 </div>

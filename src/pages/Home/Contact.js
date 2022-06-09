@@ -39,7 +39,6 @@ const Contact = () => {
                     <h1 className='text-4xl text-secondary font-bold'>Stay connected with us</h1>
                 </div>
                 <form className='grid grid-cols-1 justify-items-center gap-4' onSubmit={sendEmail}>
-                    {/* <form onSubmit={sendEmail}> */}
                         <input
                             type='text'
                             name='fullName'
@@ -71,7 +70,6 @@ const Contact = () => {
                                 result ? <Result /> : null
                             }
                         </div>
-                    {/* </form> */}
                 </form>
             </div>
         </div>
