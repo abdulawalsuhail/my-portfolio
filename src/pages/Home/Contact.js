@@ -1,33 +1,78 @@
-import React from 'react';
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
+
+const Result = () => {
+    return(
+        <p>Your message has been successfully sent. I will contact you soon..</p>
+    )
+}
 
 const Contact = () => {
+    const [result, showResult] = useState(false)
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_6nka8pi', 'template_u77uwqp', e.target, 'a1yjNkJwm9rupwNZB')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset()
+        showResult(true)
+    };
+
+    setTimeout(()=>{
+        showResult(false)
+    },5000)
+
+
     return (
         <div>
             <div className='px-10 py-14 '>
-                <div className='text-center pb-14 text-white'>
-                    <p className='text-xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-accent to-accent'>
+                <div className='text-center pb-14'>
+                    <p className='text-xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-accent to-secondary'>
                         Contact Us
                     </p>
-                    <h1 className='text-4xl text-secondary'>Stay connected with us</h1>
+                    <h1 className='text-4xl text-secondary font-bold'>Stay connected with us</h1>
                 </div>
-                <div className='grid grid-cols-1 justify-items-center gap-5'>
-                    <input
-                        type='text'
-                        placeholder='Email Address'
-                        className='input w-full max-w-md'
-                    />
-                    <input
-                        type='text'
-                        placeholder='Subject'
-                        className='input w-full max-w-md'
-                    />
-                    <textarea
-                        className='textarea w-full max-w-md'
-                        placeholder='Your message'
-                        rows={6}
-                    ></textarea>
-                    <button class="btn-primary p-3 rounded-lg text-xl ">Submit</button>
-                </div>
+                <form className='grid grid-cols-1 justify-items-center gap-4' onSubmit={sendEmail}>
+                    {/* <form onSubmit={sendEmail}> */}
+                        <input
+                            type='text'
+                            name='fullName'
+                            placeholder='Your Name'
+                            className='input w-full max-w-md'
+                        />
+                        <input
+                            type='text'
+                            name='email'
+                            placeholder='Email Address'
+                            className='input w-full max-w-md'
+                        />
+                        <input
+                            type='number'
+                            name='phone'
+                            placeholder='Phone'
+                            className='input w-full max-w-md'
+                        />
+                        <textarea
+                            className='textarea w-full max-w-md'
+                            name='message'
+                            placeholder='Your message'
+                            rows={5}
+                        ></textarea>
+                        <button class="btn-primary p-3 rounded-lg text-xl ">Submit</button>
+
+                        <div className='row'>
+                            {
+                                result ? <Result /> : null
+                            }
+                        </div>
+                    {/* </form> */}
+                </form>
             </div>
         </div>
     );
