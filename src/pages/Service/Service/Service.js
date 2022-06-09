@@ -15,7 +15,8 @@ const Service = () => {
                         <p>● A Accounted web where you will see the products
                             List andCustomers Feedbacks.<br />
                             ● Users also can add a product to the cart or remove
-                            it from thecart.</p>
+                            it from thecart.<br />
+                            ● Users </p>
                         <div class="card-actions justify-end">
                             <button class="btn btn-primary"><a href='https://accounted-web-layout.firebaseapp.com/'target='_blank'>View Project</a></button>
                         </div>
