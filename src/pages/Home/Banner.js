@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from '../../images/profile/profile.png'
+import Profile from '../../images/profile/suhail.png'
 import Google from '../../images/web/Google.png'
 import Linkedin from '../../images/web/Linked.png'
 import Spotify from '../../images/web/spotify.png'
@@ -10,7 +10,7 @@ const Banner = () => {
     return (
 
         <div>
-            <div class="hero min-h-screen bg-neutral text-white rounded-lg p-16 my-8">
+            <div class="hero min-h-screen rounded-lg p-16 my-8">
                 <div class="hero-content flex-col lg:flex-row-reverse">
                     <img src={Profile} class="max-w-sm rounded-lg shadow-2xl" alt='' />
                     <div>
@@ -23,7 +23,7 @@ const Banner = () => {
             </div>
 
             <div>
-                <div class="hero min-h-screen  p-24">
+                <div class="hero p-24">
                     <div class="hero-content flex-col lg:flex-row-reverse">
                         <div class="grid grid-cols-1 gap-3 lg: grid grid-cols-3 gap-6 rounded-lg"> 
                             <img className='rounded-lg h-24' src={Google} alt=''/>
