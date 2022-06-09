@@ -5,10 +5,9 @@ import Logo from '../../images/profile/Logo.png'
 const Navbar = () => {
 
     const menuItem=<>
-    <li><a href='/home'>Home</a></li>
-    <li><a>My Project</a></li>
-    <li><a href='/contact'>Contact Me</a></li>
-    <li><a>About</a></li>
+    <li><Link to='/'>Home</Link></li>
+    <li><Link to="/project">My Project</Link></li>
+    <li><Link to='/contact'>Contact Me</Link></li>
     </>
     
     return (
