@@ -2,6 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import GitHub from '../../images/web/GitHub.png'
 import LinkedIn from '../../images/web/Liked.png'
+import html from '../../images/icon/html.png'
+import css from '../../images/icon/css.png'
+import js from '../../images/icon/js.png'
+import bootstrap from '../../images/icon/Bootstrap.png'
+import node from '../../images/icon/node.png'
+import mongodb from '../../images/icon/mongodb.png'
+import react from '../../images/icon/react.png'
+import tailwind from '../../images/icon/tailwind.png'
+
 
 const About = () => {
     return (
@@ -38,7 +47,40 @@ const About = () => {
             </div>
             <hr />
             <div>
-                <h1 className='text-center uppercase text-3xl font-bold  mt-4'>My <span className='text-accent'>Skills</span></h1>
+                <div class="hero my-12">
+                    <div class="grid grid-cols-1 lg:grid grid-cols-2">
+                        <div>
+                            <h1 class="text-3xl font-bold text-accent">Education</h1>
+                            <p class="py-6"><span>Education Level : </span>
+                                Computer Science and Engineering (CSE) Study on going.
+                                
+                            </p>
+                            
+                            <p ><span>Exam/Degree Title : </span>
+                                HSC
+                            </p>
+                            <p class="py-3"><span>Institution Name : </span>
+                                City College
+                            </p>
+                            <p class="py-3"><span>Passing Year : </span>
+                                HSC'2021
+                            </p>
+                        </div>
+                        <div class="pl-44">
+                            <h1 class="text-3xl font-bold text-accent">Skill</h1>
+                            <div class="grid gap-2 lg:grid grid-cols-3 gap-4 w-64 my-5">
+                                <img src={html} alt=''/>
+                                <img src={css} alt=''/>
+                                <img src={js} alt=''/>
+                                <img src={bootstrap} alt=''/>
+                                <img src={react} alt=''/>
+                                <img src={tailwind} alt=''/>
+                                <img src={node} alt=''/>
+                                <img src={mongodb} alt=''/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <hr />
             <div>
