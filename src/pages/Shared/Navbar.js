@@ -8,6 +8,7 @@ const Navbar = () => {
     <li><Link to='/'>Home</Link></li>
     <li><Link to="/project">My Project</Link></li>
     <li><Link to='/contact'>Contact Me</Link></li>
+    <li><Link to='/about'>About</Link></li>
     </>
     
     return (
@@ -22,7 +23,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <a class="btn btn-ghost normal-case text-xl">
-                    <img style={{width:'27px',borderRadius:'10px', marginRight:'15px'}} className="" src={Logo} alt=''/> AA_SUHAIL
+                    <img style={{width:'27px',borderRadius:'10px', marginRight:'15px'}} className="" src={Logo} alt=''/> 
+                    <span className='text-accent font-bold'>AA_SUHAIL</span>
                 </a>
             </div>
             <div class="navbar-center hidden lg:flex">
@@ -31,7 +33,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div class="navbar-end">
-                <a href='https://drive.google.com/file/d/1guq0eRoMkcFAkgzGNiWQIJOj6sYF-L5i/view?usp=sharing' target='_blank' class="btn btn-primary">My Resume</a>
+                <a href='https://drive.google.com/file/d/1guq0eRoMkcFAkgzGNiWQIJOj6sYF-L5i/view?usp=sharing' target='_blank' class="btn btn-accent">My Resume</a>
             </div>
         </div>
     );

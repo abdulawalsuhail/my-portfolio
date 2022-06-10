@@ -32,7 +32,7 @@ const Footer = () => {
                         </label>
                         <div class="relative">
                             <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" />
-                            <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+                            <button class="btn btn-accent absolute top-0 right-0 rounded-l-none">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ const Footer = () => {
             </footer>
             <footer class="footer footer-center p-4  text-base-content">
                 <div>
-                    <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p>
+                    <p>Copyright © 2022 - All right reserved by TASSUH Ltd.</p>
                 </div>
             </footer>
         </div>

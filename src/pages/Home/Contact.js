@@ -33,7 +33,7 @@ const Contact = () => {
         <div>
             <div className='px-10 py-14 '>
                 <div className='text-center pb-14'>
-                    <p className='text-xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-accent to-secondary'>
+                    <p className='text-xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-accent to-accent'>
                         Contact Us
                     </p>
                     <h1 className='text-4xl text-secondary font-bold'>Stay connected with us</h1>
@@ -43,27 +43,27 @@ const Contact = () => {
                             type='text'
                             name='fullName'
                             placeholder='Your Name'
-                            className='input w-full max-w-md'
+                            className='input w-full max-w-md input-bordered'
                         />
                         <input
                             type='text'
                             name='email'
                             placeholder='Email Address'
-                            className='input w-full max-w-md'
+                            className='input w-full max-w-md input-bordered'
                         />
                         <input
                             type='number'
                             name='phone'
                             placeholder='Phone'
-                            className='input w-full max-w-md'
+                            className='input w-full max-w-md input-bordered'
                         />
                         <textarea
-                            className='textarea w-full max-w-md'
+                            className='textarea w-full max-w-md input-bordered'
                             name='message'
                             placeholder='Your message'
                             rows={5}
                         ></textarea>
-                        <button class="btn-primary p-3 rounded-lg text-xl ">Submit</button>
+                        <button class="btn-accent p-3 rounded-lg text-xl ">Submit</button>
 
                         <div className='row'>
                             {
